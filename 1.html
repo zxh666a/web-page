@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="https://a1static.oilchem.net/js/dayjs.min.js"></script>
+<script>
+    const timeList = ['2024/09', '2024/08', '2024/07']
+    const time2List = ['2024/09/01', '2024/08/01', '2024/07/01']
+    const time3List = ['2024', '2023', '2022']
+    const newArr = timeList.sort((a, b) => {
+        return dayjs(a) - dayjs(b)
+    })
+    const newArr2 = time2List.sort((a, b) => {
+        return dayjs(a) - dayjs(b)
+    })
+    const newArr3 = time3List.sort((a, b) => {
+        return dayjs(a) - dayjs(b)
+    })
+    alert(newArr)
+    alert(newArr2)
+    alert(newArr3)
+    alert(dayjs('2024/09'))
+</script>
+</html>
