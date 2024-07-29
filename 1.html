@@ -15,7 +15,7 @@
     const time2List = ['2024/09/01', '2024/08/01', '2024/07/01']
     const time3List = ['2024', '2023', '2022']
     const newArr = timeList.sort((a, b) => {
-        return dayjs(a) - dayjs(b)
+        return dayjs(a).format('YYYY-MM') - dayjs(b).format('YYYY-MM')
     })
     // const newArr2 = time2List.sort((a, b) => {
     //     return dayjs(a) - dayjs(b)
@@ -23,9 +23,9 @@
     // const newArr3 = time3List.sort((a, b) => {
     //     return dayjs(a) - dayjs(b)
     // })
-    // alert(newArr)
+    alert(newArr)
     // alert(newArr2)
     // alert(newArr3)
-    alert(dayjs('2024-09'))
+    // alert(dayjs('2024-09'))
 </script>
 </html>
